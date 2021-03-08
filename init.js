@@ -9,7 +9,7 @@ const username = account.username;
 const password = account.password;
 const cas = account.cas;
 
-/*async function main()
+async function main()
 {
     //connnection à mysql
     function addDays(date, days) {
@@ -53,33 +53,7 @@ while (a<marks.subjects.length) {
   console.log(mat);
   let matiere = JSON.stringify(mat)
   fs.writeFileSync('json/matière.json', matiere);
-*/
-/*
-, 
-, 
 
-
-
-
-
-
-
-`moy_an`, '"+moy_an+"', 
-`moy_an_classe`, '"+moy_an_classe+"',
-`moy_al`, '"+moy_al+"', 
-`moy_al_classe`, '"+moy_al_classe+"', 
-`moy_la`, '"+moy_la+"', 
-`moy_la_classe`, '"+moy_la_classe+"',
-
-
-
-
-
-
-
-
-*/
-/*
     return;
 }
 
@@ -89,4 +63,4 @@ main().catch(err => {
     } else {
         console.error(err);
     }
-});*/
+});
