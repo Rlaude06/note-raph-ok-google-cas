@@ -1,0 +1,34 @@
+variable à retenir
+moyenne classe : marks.averages.studentClass
+moyenne élève : marks.averages.student
+nom élève : user.name
+classe élève : user.studentClass.name
+photo de profil élève : user.avatar
+id élève = user.id
+établissement élève = user.establishment.name
+emplacement établissement = user.establishmentsInfo[0].city
+code postal établissement = user.establishmentsInfo[0].postalCode
+adresse établissement = user.establishmentsInfo[0].address[0]
+moyenne dans une matière (ex:anglais) = marks.subjects[0].averages.student
+moyenne de la classe dans une matière (ex:anglais) = marks.subjects[0].averages.studentClass
+calculer le nombre d'heure manquée:
+var i = 0;
+var nb_h_manquée = 0;
+while (i != absences.absences.length) {
+    nb_h_manquée = nb_h_manquée + absences.absences[i].hours;
+    i=i+1;
+}
+calculer le nombre d'absence injustifié:
+var a = 0;
+var nb_h_injustifiée = 0;
+while (a != absences.absences.length) {
+    if(!absences.absences[1].justified) {
+        nb_h_injustifiée = nb_h_injustifiée + absences.absences[a].hours;
+        
+    }
+    a = a+1;
+}
+récupérer le titre de la dernière info publiée : infos[infos.length-1].title
+récupérer la dernière info publiée : infos[infos.length-1].htmlContent
+récupérer le nom du dernier fichier publié : files[0].name
+récupérer l'url du dernier fichier publié : files[0].url

@@ -1,0 +1,20 @@
+    
+{
+    "an" : {"name": "ANGLAIS LV2", "id":0 },
+    "te" : {"name": "TECHNOLOGIE", "id":0 },
+    "ma" : {"name": "MATHEMATIQUES", "id":0 },
+    "mu" : {"name": "MUSIQUE", "id":0 },
+    "ph" : {"name": "PHYSIQUE-CHIMIE", "id":0 },
+    "ap" : {"name": "ARTS PLASTIQUES", "id":0 },
+    "fr" : {"name": "FRANCAIS", "id":0 },
+    "ep" : {"name": "ED.PHYSIQUE & SPORT.", "id":0 },
+    "hg" : {"name": "HISTOIRE-GEOGRAPHIE", "id":0 },
+    "sv" : {"name": "SCIENCES VIE & TERRE", "id":0 },
+    "al" : {"name": "ALLEMAND LV1", "id":0 },
+    "la" : {"name": "LCA LATIN", "id":0 },
+    "es" : {"name": "ESPAGNOL LV2", "id":0 },
+    "ru" : {"name": "RUSSE LV1", "id":0 },
+    "it" : {"name": "ITALIEN LV2", "id":0 },
+    "gr" : {"name": "LCA GRECQUE", "id":0 }
+}
+

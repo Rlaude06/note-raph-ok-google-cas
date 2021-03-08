@@ -1,0 +1,26 @@
+{
+  "actions": [
+    {
+      "description": "Connect pronote with okgoogle",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "pronote"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to pronote"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "pronote": {
+      "name": "pronote",
+      "url": "https://38dff5e3bf4c.ngrok.io "
+    }
+  },
+  "locale": "fr"
+}
