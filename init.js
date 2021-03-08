@@ -18,7 +18,6 @@ async function main()
       }
     var from = new Date;
     var to = addDays(from, 3);
-    console.log(to);
     const session = await pronote.login(url, username, password, cas);
     const marks = await session.marks();
 
