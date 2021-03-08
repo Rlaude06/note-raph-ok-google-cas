@@ -11,7 +11,6 @@ const cas = account.cas;
 
 async function main()
 {
-    //connnection à mysql
     function addDays(date, days) {
         var result = new Date(date);
         result.setDate(result.getDate() + days);
@@ -20,7 +19,6 @@ async function main()
     var from = new Date;
     var to = addDays(from, 3);
     console.log(to);
-  //  var to = new Date(2021, 3, 28);
     const session = await pronote.login(url, username, password, cas);
     const marks = await session.marks();
 
