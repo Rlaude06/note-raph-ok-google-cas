@@ -40,7 +40,7 @@ Connectez vous à votre session pronote via un ent ou le site de votre collège 
 https://????????.index-education.net/pronote/  
 
 Allez dans le dossier Utilisateurs/(votre nom d'utilisateur)/note-raph-ok-google-cas et faites clic droit ouvrir avec Code (si vous avez installé Visual Studio Code). Sinon allez dans le dossier json et ouvrez le fichier pronote-account.json en faisant clic droit ouvrir avec > Bloc-Notes. Si vous avez choisis d'utiliser code allez dans le dossier json et cliquez sur pronote-account.json.  
-Remplacez la valeur "url": "https://demo.index-education.net/pronote/" par "url": "le lien que vous avez copié (remssemblant à https://????????.index-education.net/pronote/  )" (faites attention à bien garder les guillemets.
+Remplacez la valeur "url": "https://demo.index-education.net/pronote/" par "url": "le lien que vous avez copié (remssemblant à https://????????.index-education.net/pronote/  )" (faites attention à bien garder les guillemets.  
 Faites pareil en remplaçant "demonstration" par "votre nom d'utilisteur ent",   
 "pronotevs" par "votre mot de passe" 
 et "cas" par "votre cas" parmis la liste suivante :  
@@ -86,3 +86,29 @@ et "cas" par "votre cas" parmis la liste suivante :
     - ENT "Lycee Jean Renoir Munich" (CAS : "ljr-munich")
     - ENT "L'Eure en Normandie" (CAS : "eure-normandie")  
 </details>
+
+Une fois tous les changements effectués sauvegardez le fichier.
+Si vous êtes sous linux et que vous ne savez pas vraiment vous servir du terminale de même pour windows il est toujours temps d'installer Visual Studio Code.
+Si vous tenez quand même à ne pas installer visual studio code ouvrez un terminal ou un powershell si vous êtes sous windows et rendez vous dans le dossier note-raph-ok-google  
+pour linux :  
+``` shell  
+cd /home/(nom d'utilisateur)/note-raph-ok-google-cas  
+```
+pour windows  
+``` shell  
+cd C:/Utilisateurs/(nom d'utilisateur)/note-raph-ok-google-cas 
+```
+Dans visual studio code ouvrez le terminal en bas à gauche.
+Dans les deux cas exécutez la commande : 
+``` shell  
+npm init
+```
+Puis appuyer sur entrer jusqu'à ce que vous puissiez exécuter une nouvelle commande puis exécuter la commande :  
+``` shell  
+npm update
+```
+Attendez la fin de son éxecution puis éxecutez la commande suivante :  
+``` shell 
+npm -i --save pronote-api actions-on-google body-parser express
+```
+Vous pouvez maintenant éxecuter le premier script qui s'appelle test.js
