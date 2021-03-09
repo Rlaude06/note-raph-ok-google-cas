@@ -301,3 +301,15 @@ Ouvrez ce fichier et remplacer le code présant dans le fichier par le suivant :
 }
 
 ```
+Une fois cela fait rendez vous sur [le site suivant](https://ngrok.com/) et créez vous un compte.
+Une fois connecté à ce compte vous arrivez sur votre dash board qui ressemble à ceci : 
+![image](https://user-images.githubusercontent.com/43902216/110550604-491f4280-8134-11eb-91ee-b75f4f98c1b2.png)
+Copiez la valeur que j'ai surlignez en rouge et rndez vous dans le terminal de visual sutio pour écrire la commande suivante :  
+Sous Windows :  
+``` shell
+./ngrok.exe authtoken collezvotretokenici
+```
+Sous Linux :  
+``` shell
+./ngrok authtoken collezvotretokenici
+```
