@@ -112,3 +112,22 @@ Attendez la fin de son éxecution puis éxecutez la commande suivante :
 npm -i --save pronote-api actions-on-google body-parser express
 ```
 Vous pouvez maintenant éxecuter le premier script qui s'appelle test.js
+
+# Les scripts d'initialisation
+
+Nous allons tout d'abord tester si les identifiants sont correct en éxecutant la commande :  
+``` shell 
+node test.js
+```
+Si dans le terminal vous avez le message Mauvais identifiants rendez vous dans la partie précédente vous vous êtes trompé quelque par votre fichier pronote-account.json doit ressembler à celui-ci (mais avec vos identifiants) :  
+```json
+{
+    "url": "https://??????.index-education.net/pronote/",
+
+    "username": "?????.??????",
+
+    "password": "????????????",
+
+    "cas": "??????"
+}
+```
