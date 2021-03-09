@@ -119,7 +119,7 @@ Nous allons tout d'abord tester si les identifiants sont correct en éxecutant l
 ``` shell 
 node test.js
 ```
-Si dans le terminal vous avez le message Mauvais identifiants rendez vous dans la partie précédente vous vous êtes trompé quelque par votre fichier pronote-account.json doit ressembler à celui-ci (mais avec vos identifiants) :  
+Si dans le terminal vous avez le message Mauvais identifiants rendez vous dans la partie précédente vous vous êtes trompé quelque par votre fichier pronote-account.json doit ressembler à celui-ci (remplacer les ? par vos identifiants) :  
 ```json
 {
     "url": "https://??????.index-education.net/pronote/",
@@ -131,3 +131,50 @@ Si dans le terminal vous avez le message Mauvais identifiants rendez vous dans l
     "cas": "??????"
 }
 ```
+Si le script ne marche toujours pas alors rendez vous sur [ce lien](https://github.com/Rlaude06/note-raph-ok-google/) et suivez les instructions.
+Si le script marche bravo vous avez passé une grande partie des difficultées.
+Vous pouvez maintenant éxecuter le second script nommé "init.js" qui configurera un maximum de chose à votre place
+``` shell 
+node init.js
+```
+Une fois celui-ci éxecuter rendez vous dans le dossier json et éditez le fichier matière.json. Mettez un saut de ligne avant chaque "{" pour rendre le code plus lisible. Vous aurez un résulat semblable au miens : 
+```json
+[
+    {"name":"ANGLAIS LV2","id":0},
+    {"name":"TECHNOLOGIE","id":1},
+    {"name":"VIE DE CLASSE","id":2},
+    {"name":"MATHEMATIQUES","id":3},
+    {"name":"MUSIQUE","id":4},
+    {"name":"PHYSIQUE-CHIMIE","id":5},
+    {"name":"ARTS PLASTIQUES","id":6},
+    {"name":"FRANCAIS","id":7},
+    {"name":"ED.PHYSIQUE & SPORT.","id":8},
+    {"name":"HISTOIRE-GEOGRAPHIE","id":9},
+    {"name":"SCIENCES VIE & TERRE","id":10},
+    {"name":"ALLEMAND LV1","id":11},
+    {"name":"LCA LATIN","id":12},
+    {"name":"suppr","id":0},
+    {"name":"suppr","id":0},
+    {"name":"suppr","id":0},
+    {"name":"suppr","id":0}
+]
+```
+Supprimez tous ceux qui ont pour valeur name "suppr" Vous obtiendrez quelque chose de semblable à ce code (avec un ordre diffèrent potentiellement ce qui n'est pas un problème) (n'oubliez pas de retirer la dernière virgule) :
+``` json
+[
+    {"name":"ANGLAIS LV2","id":0},
+    {"name":"TECHNOLOGIE","id":1},
+    {"name":"VIE DE CLASSE","id":2},
+    {"name":"MATHEMATIQUES","id":3},
+    {"name":"MUSIQUE","id":4},
+    {"name":"PHYSIQUE-CHIMIE","id":5},
+    {"name":"ARTS PLASTIQUES","id":6},
+    {"name":"FRANCAIS","id":7},
+    {"name":"ED.PHYSIQUE & SPORT.","id":8},
+    {"name":"HISTOIRE-GEOGRAPHIE","id":9},
+    {"name":"SCIENCES VIE & TERRE","id":10},
+    {"name":"ALLEMAND LV1","id":11},
+    {"name":"LCA LATIN","id":12}
+]
+```
+
