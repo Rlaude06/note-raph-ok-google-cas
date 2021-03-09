@@ -248,3 +248,6 @@ Mon résultat après toutes les modifications ressemble à ceci (cela changera p
     "la":{"name":"LCA LATIN","id":12}
 }
 ```
+Une fois que vous avez fais ça vous avez fais le plus difficile le reste vous paraitra étonnament simple.
+
+# Création de l'application google
