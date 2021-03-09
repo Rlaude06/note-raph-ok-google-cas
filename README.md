@@ -251,3 +251,22 @@ Mon résultat après toutes les modifications ressemble à ceci (cela changera p
 Une fois que vous avez fais ça vous avez fais le plus difficile le reste vous paraitra étonnament simple.
 
 # Création de l'application google
+Rendez vous sur [le lien suivant](https://console.actions.google.com/)  
+Cliquez sur "New project", donnez lui le nom que vous voulez (ici je vais l'appeler noteraph), sélectionnez "french" et "france", puis "create project".  
+Choisissez "Custom", "Blank Project" et cliquez sur "Start Building".  
+Dans "display name" mettez "Note Raph", puis cliquez sur "save". Maintenant cliquez sur les trois points en haut à gauche à ciôté de votre profil, puis sur "project settings".  
+Copiez le "Project-id" (pour moi "noteraph-c633a").  
+Revenez sur Visual Studio Code ecrivez dans le terminal.
+Si vous êtes sous linux éxecutez d'abord :  
+``` shell
+sudo chmod +x gactions
+```
+Puis :  
+``` shell
+./gactions init
+```  
+
+Sous Windows faites tout simplement :  
+``` shell
+./gactions.exe init
+```
