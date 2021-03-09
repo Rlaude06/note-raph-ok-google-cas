@@ -214,3 +214,20 @@ Enfin devant chaque { rajoutez "les deux premières lettres de la matière selon
     "it" : {"name": "ITALIEN LV2", "id":0 },
     "gr" : {"name": "LCA GRECQUE", "id":0 }
 ```
+Note : Les matière non renseigné dans ce modèle ne sont pas supporté il faut donc supprimer la ligne de cette manière (ici on supprime VIE DE CLASSE) :
+``` json
+{  
+"an" : {"name": "ANGLAIS LV2", "id":0 },   
+"te" : {"name": "TECHNOLOGIE", "id":0 },   
+"vi" : {"name": "VIE DE CLASSE", "id":0 },  
+"la" : {"name": "LCA LATIN", "id":0 }  
+}  
+```
+Après modification le code ressemble à ceci tout simplement :  
+``` json
+{  
+"an" : {"name": "ANGLAIS LV2", "id":0 },   
+"te" : {"name": "TECHNOLOGIE", "id":0 },   
+"la" : {"name": "LCA LATIN", "id":0 }  
+}  
+```
