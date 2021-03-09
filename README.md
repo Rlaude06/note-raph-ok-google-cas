@@ -270,3 +270,34 @@ Sous Windows faites tout simplement :
 ``` shell
 ./gactions.exe init
 ```
+Cela créera un fichier action.json.  
+Ouvrez ce fichier et remplacer le code présant dans le fichier par le suivant :  
+``` json
+{
+  "actions": [
+    {
+      "description": "Connect pronote with okgoogle",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "pronote"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to pronote"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "pronote": {
+      "name": "pronote",
+      "url": "lien ngrok"
+    }
+  },
+  "locale": "fr"
+}
+
+```
