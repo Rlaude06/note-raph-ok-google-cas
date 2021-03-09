@@ -231,3 +231,20 @@ Après modification le code ressemble à ceci tout simplement :
 "la" : {"name": "LCA LATIN", "id":0 }  
 }  
 ```
+Mon résultat après toutes les modifications ressemble à ceci (cela changera pour l'ordre et les options de votre côté) :
+``` json
+{
+    "an":{"name":"ANGLAIS LV2","id":0},
+    "te":{"name":"TECHNOLOGIE","id":1},
+    "ma":{"name":"MATHEMATIQUES","id":3},
+    "mu":{"name":"MUSIQUE","id":4},
+    "ph":{"name":"PHYSIQUE-CHIMIE","id":5},
+    "ap":{"name":"ARTS PLASTIQUES","id":6},
+    "fr":{"name":"FRANCAIS","id":7},
+    "ep":{"name":"ED.PHYSIQUE & SPORT.","id":8},
+    "hg":{"name":"HISTOIRE-GEOGRAPHIE","id":9},
+    "sv":{"name":"SCIENCES VIE & TERRE","id":10},
+    "al":{"name":"ALLEMAND LV1","id":11},
+    "la":{"name":"LCA LATIN","id":12}
+}
+```
