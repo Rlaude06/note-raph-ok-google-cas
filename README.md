@@ -34,3 +34,7 @@ Une fois fais pour simplifer la configuration je vous conseille d'installer [vis
 Après tout cela on peut passer à la configuration des script.
 
 # Configuration des scripts
+Si vous devez passer par un ent ou le site de votre collège pour vous authentifier vous êtes lur le bon code, sinon, si vous devez vous identifier directement via un site pronote, rendez vous sur [ce lien](https://github.com/Rlaude06/note-raph-ok-google/).
+Téléchargez le fichier zip depuis le github et dézippez le dans le dossier Utilisateurs/(votre nom d'utilisateur windows) ou sur /home/(votre nom d'utilisateur) si vous êtes sur linux.  
+Connectez vous à votre session pronote via un ent ou le site de votre collège et copié l'url qui devrait ressembler à celui-ci :  
+https://0750669v.index-education.net/pronote/
