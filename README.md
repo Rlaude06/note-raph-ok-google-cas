@@ -332,3 +332,6 @@ Sous Linux :
 ``` shell
 ./gactions update -action_package action.json -project l'iddevotreapplication
 ```
+Copiez le lien du terminal et ouvrez le dans chrome.  
+Connectez vous à votre compte. Il vous renverra une clé à copier-coller dans le terminal de Visual Studio Code.  
+Appuyez sur entrer.
