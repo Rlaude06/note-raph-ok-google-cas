@@ -323,12 +323,12 @@ Sous Linux :
 ./note-raph-ok-google-cas/ngrok http 3000
 ```
 Ne fermez pas cette fenêtre c'est elle qui permet à google de communiquer avec votre machine. Copiez le lien commençant par https et collez le dans votre fichier action.json à la place de "lien ngrok" (gardez bien les guillemets).
-Maintenant réouvrez Visual Studio Code et éxécutez la commande suivante :  
+Maintenant réouvrez Visual Studio Code et éxécutez la commande suivante en remplaçant par l'id de votre app ok google:  
 Sous Windows :  
 ``` shell
-./gactions.exe
+./gactions.exe update -action_package action.json -project l'iddevotreapplication
 ```
 Sous Linux :  
 ``` shell
-./gactions
+./gactions update -action_package action.json -project l'iddevotreapplication
 ```
