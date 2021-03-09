@@ -177,4 +177,40 @@ Supprimez tous ceux qui ont pour valeur name "suppr" Vous obtiendrez quelque cho
     {"name":"LCA LATIN","id":12}
 ]
 ```
-
+Changer les crochets du tout début du code et de la fin par des { en respectant le sens des crochet pour un résulat similaire au suivant :  
+``` json
+{
+    {"name":"ANGLAIS LV2","id":0},
+    {"name":"TECHNOLOGIE","id":1},
+    {"name":"VIE DE CLASSE","id":2},
+    {"name":"MATHEMATIQUES","id":3},
+    {"name":"MUSIQUE","id":4},
+    {"name":"PHYSIQUE-CHIMIE","id":5},
+    {"name":"ARTS PLASTIQUES","id":6},
+    {"name":"FRANCAIS","id":7},
+    {"name":"ED.PHYSIQUE & SPORT.","id":8},
+    {"name":"HISTOIRE-GEOGRAPHIE","id":9},
+    {"name":"SCIENCES VIE & TERRE","id":10},
+    {"name":"ALLEMAND LV1","id":11},
+    {"name":"LCA LATIN","id":12}
+}
+```
+Enfin devant chaque { rajoutez "les deux premières lettres de la matière selon le modèle suivant :  
+``` json
+    "an" : {"name": "ANGLAIS LV2", "id":0 },
+    "te" : {"name": "TECHNOLOGIE", "id":0 },
+    "ma" : {"name": "MATHEMATIQUES", "id":0 },
+    "mu" : {"name": "MUSIQUE", "id":0 },
+    "ph" : {"name": "PHYSIQUE-CHIMIE", "id":0 },
+    "ap" : {"name": "ARTS PLASTIQUES", "id":0 },
+    "fr" : {"name": "FRANCAIS", "id":0 },
+    "ep" : {"name": "ED.PHYSIQUE & SPORT.", "id":0 },
+    "hg" : {"name": "HISTOIRE-GEOGRAPHIE", "id":0 },
+    "sv" : {"name": "SCIENCES VIE & TERRE", "id":0 },
+    "al" : {"name": "ALLEMAND LV1", "id":0 },
+    "la" : {"name": "LCA LATIN", "id":0 },
+    "es" : {"name": "ESPAGNOL LV2", "id":0 },
+    "ru" : {"name": "RUSSE LV1", "id":0 },
+    "it" : {"name": "ITALIEN LV2", "id":0 },
+    "gr" : {"name": "LCA GRECQUE", "id":0 }
+```
