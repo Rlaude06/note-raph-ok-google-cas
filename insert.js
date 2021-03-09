@@ -379,11 +379,12 @@ while (a<timetable.length) {
     if(lang.it == 1){if(timetable[a].subject == mat.it.name){subject = " d'italien" }};
     if(lang.gr == 1){if(timetable[a].subject == mat.gr.name){subject = " de grec" }};
 
-    if(timetable[a].room.indexOf(' ') == -1){
+    room = timetable[a].room      
+    /*if(timetable[a].room.indexOf(' ') == -1){
         room = timetable[a].room   
     }else{
         room = timetable[a].room.slice(0, timetable[a].room.indexOf(' '))
-    }
+    }*/
 
     edt.classes.push({
     "subject":subject,
