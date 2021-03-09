@@ -1,2 +1,2 @@
-# pronote-ok-google
-Un projet qui permettra à therme de demander à google les devoirs pour demain, le nombre d'absences etc...
+# Note Raph
+L'objectif de Note Raph est de connecter un compte pronote avec ok-google. A terme ce logiciel deviendra une suite qui aura pour objectifs de couvrir ce qui manque à pronote.
