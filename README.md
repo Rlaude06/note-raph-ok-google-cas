@@ -334,4 +334,5 @@ Sous Linux :
 ```
 Copiez le lien du terminal et ouvrez le dans chrome.  
 Connectez vous à votre compte. Il vous renverra une clé à copier-coller dans le terminal de Visual Studio Code.  
-Appuyez sur entrer.
+Appuyez sur entrer. Le terminal affichera un lien restez enfoncé sur control et clicquez gauche sur ce lien vous arrivez dans un simulateur de google home.  
+Ne fermez ma l'onglet et rendez vous dans Visual Studio Code.
