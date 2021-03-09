@@ -311,5 +311,24 @@ Sous Windows :
 ```
 Sous Linux :  
 ``` shell
-./ngrok authtoken collezvotretokenici
+sudo chmod +x ngrok && ./ngrok authtoken collezvotretokenici
+```
+Ouvrez un powershell sur windows pour cela restez enfoncé sur la touche Windows + R et tapez powershell. Sous linux ouvrez simplement un terminal.
+Sous Windows :  
+``` shell
+./note-raph-ok-google-cas/ngrok.exe http 3000
+```
+Sous Linux :  
+``` shell
+./note-raph-ok-google-cas/ngrok http 3000
+```
+Ne fermez pas cette fenêtre c'est elle qui permet à google de communiquer avec votre machine. Copiez le lien commençant par https et collez le dans votre fichier action.json à la place de "lien ngrok" (gardez bien les guillemets).
+Maintenant réouvrez Visual Studio Code et éxécutez la commande suivante :  
+Sous Windows :  
+``` shell
+./gactions.exe
+```
+Sous Linux :  
+``` shell
+./gactions
 ```
