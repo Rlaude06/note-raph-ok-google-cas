@@ -111,7 +111,7 @@ npm update
 ```
 Attendez la fin de son exécution puis éxecutez la commande suivante :  
 ``` shell 
-npm -i --save pronote-api actions-on-google body-parser express
+npm i --save pronote-api actions-on-google body-parser express
 ```
 Vous pouvez maintenant éxecuter le premier script qui s'appelle test.js
 
@@ -417,7 +417,7 @@ Sous Windows :
 * Copier le lien commançant par https et le coller à la place de l'ancien dans le fichier action.json
 * Ouvrir une deuxième fenêtre de powershell et éxecuter les commandes suivantes :  
 ``` shell
-.\note-raph-ok-google-cas\gactions.exe update -action_package action.json -project (PROJECT ID de votre app okgoogle(sans les parenthèses))
+.\note-raph-ok-google-cas\gactions.exe update -action_package note-raph-ok-google-cas\action.json -project (PROJECT ID de votre app okgoogle(sans les parenthèses))
 .\note-raph-ok-google-cas\start.bat
 ```
 Sous Linux :  
@@ -428,6 +428,6 @@ Sous Linux :
 * Copier le lien commançant par https et le coller à la place de l'ancien dans le fichier action.json
 * Ouvrir une deuxième fenêtre de powershell et éxecuter les commandes suivantes :  
 ``` shell
-./note-raph-ok-google-cas/gactions.exe update -action_package action.json -project (PROJECT ID de votre app okgoogle(sans les parenthèses))
+./note-raph-ok-google-cas/gactions.exe update -action_package note-raph-ok-google-cas/action.json -project (PROJECT ID de votre app okgoogle(sans les parenthèses))
 sudo bash ./note-raph-ok-google-cas/start.sh
 ```
