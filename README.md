@@ -3,7 +3,9 @@ L'objectif de Note Raph ok-google est de connecter un compte pronote avec ok-goo
 -Note Raph ok-google  
 -Note Raph calendar (en cours de programation)  
 Note Raph ok-google permet de récupérer tout ce que l'application pronote propose à la portée de votre voix.  
-Par exemple, les devoirs, les moyennes, les notes l'emploi du temps etc...
+Par exemple, les devoirs, les moyennes, les notes l'emploi du temps etc...  
+Si vous êtes bloqué durant la configuration envoyez moi un mail à note.raph.help@outlook.com avec le détail de votre souci et un screen de votre terminal de commande Visual Studio Code.  
+Par ailleurs si vous n'avez jamais codé de votre vie suivez à la lettre chaque consigne pour éviter d'être bloqué.  
 
 
 # Pré-requis
@@ -360,4 +362,32 @@ Sous Windows :
 Sous Linux :  
 ``` shell
 ./gactions update -action_package action.json -project l'iddevotreapplication
+```
+Puis relancez index.js :  
+``` shell
+node index.js
+```
+Retournez sur l'environement de test et rééssayez (si vous avez toujours un problème à vous connecter contactez moi sur mon mail (note.raph.help@outlook.com)).  
+Si tous ce passe bien google vous salueras amicalement avec votre nom prénom.
+Pour tester rapidement dans la bar en haut qui sert à parler à google écrivez :  
+quelle est ma moyenne générale
+Si elle vous retourne votre moyenne général magnifique ok google marche !.
+Quittez le programme dans le terminal en faisant Ctrl+C.
+Sous windows :  
+-Rendez-vous dans votre dossier personnnel en faisant Win+R puis %HOMEPATH% puis entrer.  
+-Rendez-vous dans le dossier note-raph-ok-google-cas.  
+-Double-cliquez sur le fichier start.bat et ça y est pronote marche sur tous les appareil ok google connecté à votre compte google :  
+
+-Votre téléphone si il est sous android
+-Votre google home
+-Votre environement de test google home
+-Votre télé connectée
+-Votre montre connectée...
+
+Sous linux :  
+Ouvrez un terminal. Faites :  
+``` shell
+cd note-raph-ok-google-cas/  
+sudo chmod +x start.sh
+sudo bash start.sh
 ```
