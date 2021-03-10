@@ -1,5 +1,5 @@
 @ECHO OFF
 :h
-node C:\Users\rapha\Desktop\api-pronote-export2\insert.js
-node C:\Users\rapha\Desktop\api-pronote-export2\index.js
+node %HOMEPATH%\note-raph-ok-google-cas\insert.js
+node %HOMEPATH%\note-raph-ok-google-cas\index.js
 goto h
