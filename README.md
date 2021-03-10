@@ -109,7 +109,7 @@ Puis appuyez sur entrer jusqu'à ce que vous puissiez exécuter une nouvelle com
 ``` shell  
 npm update
 ```
-Attendez la fin de son éxecution puis éxecutez la commande suivante :  
+Attendez la fin de son exécution puis éxecutez la commande suivante :  
 ``` shell 
 npm -i --save pronote-api actions-on-google body-parser express
 ```
@@ -121,7 +121,7 @@ Nous allons tout d'abord tester si les identifiants sont correct en éxecutant l
 ``` shell 
 node test.js
 ```
-Si dans le terminal vous avez le message Mauvais identifiants rendez vous dans la partie précédente vous vous êtes trompé quelque par votre fichier pronote-account.json doit ressembler à celui-ci (remplacer les ? par vos identifiants) :  
+Si dans le terminal vous avez le message "Mauvais identifiants" rendez-vous dans la partie précédente vous vous êtes trompé quelque part. Votre fichier pronote-account.json doit ressembler à celui-ci (remplacez les ? par vos identifiants) :  
 ```json
 {
     "url": "https://??????.index-education.net/pronote/",
@@ -135,11 +135,11 @@ Si dans le terminal vous avez le message Mauvais identifiants rendez vous dans l
 ```
 Si le script ne marche toujours pas alors rendez vous sur [ce lien](https://github.com/Rlaude06/note-raph-ok-google/) et suivez les instructions.
 Si le script marche bravo vous avez passé une grande partie des difficultées.
-Vous pouvez maintenant éxecuter le second script nommé "init.js" qui configurera un maximum de chose à votre place
+Vous pouvez maintenant exécutez le second script nommé "init.js" qui configurera un maximum de chose à votre place
 ``` shell 
 node init.js
 ```
-Une fois celui-ci éxecuter rendez vous dans le dossier json et éditez le fichier matière.json. Mettez un saut de ligne avant chaque "{" pour rendre le code plus lisible. Vous aurez un résulat semblable au miens : 
+Une fois celui-ci exécuté, rendez-vous dans le dossier json et éditez le fichier matière.json. Mettez un saut de ligne avant chaque "{" pour rendre le code plus lisible. Vous aurez un résulat semblable au mien : 
 ```json
 [
     {"name":"ANGLAIS LV2","id":0},
@@ -179,7 +179,7 @@ Supprimez tous ceux qui ont pour valeur name "suppr" Vous obtiendrez quelque cho
     {"name":"LCA LATIN","id":12}
 ]
 ```
-Changer les crochets du tout début du code et de la fin par des { en respectant le sens des crochet pour un résulat similaire au suivant :  
+Changer les crochets du tout début du code et de la fin par des "{" en respectant le sens des crochet pour un résulat similaire au suivant :  
 ``` json
 {
     {"name":"ANGLAIS LV2","id":0},
@@ -270,6 +270,20 @@ Cliquez sur "New project", donnez lui le nom que vous voulez (ici je vais l'appe
 Choisissez "Custom", "Blank Project" et cliquez sur "Start Building".  
 Dans "display name" mettez "Note Raph", puis cliquez sur "save". Maintenant cliquez sur les trois points en haut à gauche à ciôté de votre profil, puis sur "project settings".  
 Copiez le "Project-id" (pour moi "noteraph-c633a").  
+Résumé des étapes en image :  
+![Capture d’écran 2021-03-10 235127](https://user-images.githubusercontent.com/43902216/110708826-90bcd180-81fb-11eb-90e9-06cb637a8d0d.png)  
+![Capture d’écran 2021-03-10 234243](https://user-images.githubusercontent.com/43902216/110708360-dd53dd00-81fa-11eb-93e8-d924cdd37fdd.png)  
+![Capture d’écran 2021-03-10 234311](https://user-images.githubusercontent.com/43902216/110708443-f9f01500-81fa-11eb-81bb-bb6cb3fae934.png)  
+![Capture d’écran 2021-03-10 234325](https://user-images.githubusercontent.com/43902216/110708459-007e8c80-81fb-11eb-972f-515c8168a18f.png)  
+![Capture d’écran 2021-03-10 234340](https://user-images.githubusercontent.com/43902216/110708473-05dbd700-81fb-11eb-9801-77dcef3d9ab6.png)  
+![Capture d’écran 2021-03-10 234356](https://user-images.githubusercontent.com/43902216/110708485-096f5e00-81fb-11eb-802f-e7721455908c.png)  
+![Capture d’écran 2021-03-10 234440](https://user-images.githubusercontent.com/43902216/110708495-0d9b7b80-81fb-11eb-89c9-a468d20b912a.png)  
+![Capture d’écran 2021-03-10 234458](https://user-images.githubusercontent.com/43902216/110708649-489daf00-81fb-11eb-91e3-818f02e699e3.png)  
+![Capture d’écran 2021-03-10 235018](https://user-images.githubusercontent.com/43902216/110708722-679c4100-81fb-11eb-9a8e-537b80947c84.png)  
+![Capture d’écran 2021-03-10 234001](https://user-images.githubusercontent.com/43902216/110708739-6e2ab880-81fb-11eb-84fd-dadd30778019.png)  
+![Capture d’écran 2021-03-10 233814](https://user-images.githubusercontent.com/43902216/110708760-74b93000-81fb-11eb-998c-93c533fd5bea.png)  
+
+
 Revenez sur Visual Studio Code ecrivez dans le terminal.
 Si vous êtes sous linux éxecutez d'abord :  
 ``` shell
@@ -318,57 +332,59 @@ Ouvrez ce fichier et remplacer le code présant dans le fichier par le suivant :
 Une fois cela fait rendez vous sur [le site suivant](https://ngrok.com/) et créez vous un compte.
 Une fois connecté à ce compte vous arrivez sur votre dash board qui ressemble à ceci : 
 ![image](https://user-images.githubusercontent.com/43902216/110550604-491f4280-8134-11eb-91ee-b75f4f98c1b2.png)
-Copiez la valeur que j'ai surlignez en rouge et rndez vous dans le terminal de visual sutio pour écrire la commande suivante :  
+Copiez la valeur que j'ai surligné en rouge et rendez-vous dans le terminal de visual studio code pour écrire la commande suivante :  
 Sous Windows :  
 ``` shell
-./ngrok.exe authtoken collezvotretokenici
+.\ngrok.exe authtoken collezvotretokenici
 ```
 Sous Linux :  
 ``` shell
 sudo chmod +x ngrok && ./ngrok authtoken collezvotretokenici
 ```
-Ouvrez un powershell sur windows pour cela restez enfoncé sur la touche Windows + R et tapez powershell. Sous linux ouvrez simplement un terminal.
+Ouvrez un powershell sur windows. Pour cela restez enfoncé sur la touche Windows + R et tapez powershell. Sous linux ouvrez simplement un terminal.
 Sous Windows :  
 ``` shell
-./note-raph-ok-google-cas/ngrok.exe http 3000
+.\note-raph-ok-google-cas\ngrok.exe http 3000
 ```
 Sous Linux :  
 ``` shell
 ./note-raph-ok-google-cas/ngrok http 3000
 ```
 Ne fermez pas cette fenêtre c'est elle qui permet à google de communiquer avec votre machine. Copiez le lien commençant par https et collez le dans votre fichier action.json à la place de "lien ngrok" (gardez bien les guillemets).
-Maintenant réouvrez Visual Studio Code et éxécutez la commande suivante en remplaçant par l'id de votre app ok google:  
+Maintenant réouvrez Visual Studio Code et exécutez la commande suivante en remplaçant par l'id de votre app ok google créée ci-dessus (PROJECT ID) :  
 Sous Windows :  
 ``` shell
-./gactions.exe update -action_package action.json -project l'iddevotreapplication
+./gactions.exe update -action_package action.json -project (suivi du PROJECT ID)
 ```
 Sous Linux :  
 ``` shell
-./gactions update -action_package action.json -project l'iddevotreapplication
+./gactions update -action_package action.json -project (suivi du PROJECT ID)
 ```
 Copiez le lien du terminal et ouvrez le dans chrome.  
 Connectez vous à votre compte. Il vous renverra une clé à copier-coller dans le terminal de Visual Studio Code.  
-Appuyez sur entrer. Le terminal affichera un lien restez enfoncé sur control et cliquez gauche sur ce lien vous arrivez dans un simulateur de google home.  
-Ne fermez pas l'onglet et rendez vous dans Visual Studio Code.  
-Executez la commande suivant :  
+Appuyez sur entrer. Le terminal affichera un lien restez enfoncé sur Ctrl et cliquez gauche sur ce lien vous arrivez dans un simulateur de google home.  
+Ne fermez pas l'onglet et rendez-vous dans Visual Studio Code.  
+Exé-cutez la commande suivant :  
 ``` shell
 node index.js
 ```
-Rendez vous dans l'onglet chrome où l'application test tourne et cliquez sur "Parler avec Note Raph". Si il vous réponds que l'application ne réponds pas retournez dans le fichier action.json et vérifiez le lien ngrok. Une fois les modification éffectué rendez vous dans le terminal faites Ctrl+C et éxecutez la commande suivante pour mettre à jour l'adresse :  
+Rendez vous dans l'onglet chrome où l'application test tourne et cliquez sur "Parler avec Note Raph".  
+![Capture d’écran 2021-03-10 233923](https://user-images.githubusercontent.com/43902216/110709117-032db180-81fc-11eb-96d9-a400bac3a4d2.png)  
+Si il vous réponds que l'application ne réponds pas retournez dans le fichier action.json et vérifiez le lien ngrok. Une fois les modification effectuées rendez-vous dans le terminal, faites Ctrl+C et éxecutez la commande suivante pour mettre à jour l'adresse :  
 Sous Windows :  
 ``` shell
-./gactions.exe update -action_package action.json -project l'iddevotreapplication
+.\gactions.exe update -action_package action.json -project (suivi du PROJECT ID)
 ```
 Sous Linux :  
 ``` shell
-./gactions update -action_package action.json -project l'iddevotreapplication
+./gactions update -action_package action.json -project (suivi du PROJECT ID)
 ```
 Puis relancez index.js :  
 ``` shell
 node index.js
 ```
 Retournez sur l'environement de test et rééssayez (si vous avez toujours un problème à vous connecter contactez moi sur mon mail (note.raph.help@outlook.com)).  
-Si tous ce passe bien google vous salueras amicalement avec votre nom prénom.
+Si tout se passe bien google vous saluera amicalement avec votre nom prénom.
 Pour tester rapidement dans la bar en haut qui sert à parler à google écrivez :  
 quelle est ma moyenne générale
 Si elle vous retourne votre moyenne général magnifique ok google marche !.
@@ -387,7 +403,7 @@ Sous windows :
 Sous linux :  
 Ouvrez un terminal. Faites :  
 ``` shell
-cd note-raph-ok-google-cas/  
+cd note-raph-ok-google-cas  
 sudo chmod +x start.sh
 sudo bash start.sh
 ```
