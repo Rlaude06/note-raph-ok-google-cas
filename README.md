@@ -417,8 +417,8 @@ Sous Windows :
 * Copier le lien commançant par https et le coller à la place de l'ancien dans le fichier action.json
 * Ouvrir une deuxième fenêtre de powershell et éxecuter les commandes suivantes :  
 ``` shell
-.\note-raph-ok-google\gactions.exe update -action_package action.json -project (PROJECT ID de votre app okgoogle(sans les parenthèses))
-.\note-raph-ok-google\start.bat
+.\note-raph-ok-google-cas\gactions.exe update -action_package action.json -project (PROJECT ID de votre app okgoogle(sans les parenthèses))
+.\note-raph-ok-google-cas\start.bat
 ```
 Sous Linux :  
 * Ouvrir un terminal et exécuter la commande :  
@@ -428,6 +428,6 @@ Sous Linux :
 * Copier le lien commançant par https et le coller à la place de l'ancien dans le fichier action.json
 * Ouvrir une deuxième fenêtre de powershell et éxecuter les commandes suivantes :  
 ``` shell
-./note-raph-ok-google/gactions.exe update -action_package action.json -project (PROJECT ID de votre app okgoogle(sans les parenthèses))
-sudo bash ./note-raph-ok-google/start.sh
+./note-raph-ok-google-cas/gactions.exe update -action_package action.json -project (PROJECT ID de votre app okgoogle(sans les parenthèses))
+sudo bash ./note-raph-ok-google-cas/start.sh
 ```
