@@ -41,7 +41,7 @@ Téléchargez le fichier zip depuis le github et dézippez le dans le dossier Ut
 Connectez vous à votre session pronote via un ent ou le site de votre collège et copié l'url (sans : "eleve.html?identifiant=......") qui devrait ressembler à celui-ci :  
 https://????????.index-education.net/pronote/  
 
-Allez dans le dossier Utilisateurs/(votre nom d'utilisateur)/note-raph-ok-google-cas et faites clic droit ouvrir avec Code (si vous avez installé Visual Studio Code). Sinon allez dans le dossier json et ouvrez le fichier pronote-account.json en faisant clic droit ouvrir avec > Bloc-Notes. Si vous avez choisis d'utiliser code allez dans le dossier json et cliquez sur pronote-account.json.  
+Allez dans le dossier C:\Users\(votre nom d'utilisateur)\note-raph-ok-google-cas (/home/(votrenomutilisateur)/note-raph-ok-google-cas pour linux) et faites clic droit ouvrir avec Code (si vous avez installé Visual Studio Code). Sinon allez dans le dossier json et ouvrez le fichier pronote-account.json en faisant clic droit ouvrir avec > Bloc-Notes. Si vous avez choisis d'utiliser visual studio code allez dans le dossier json et cliquez sur pronote-account.json.  
 Remplacez la valeur "url": "https://demo.index-education.net/pronote/" par "url": "le lien que vous avez copié (remssemblant à https://????????.index-education.net/pronote/  )" (faites attention à bien garder les guillemets.  
 Faites pareil en remplaçant "demonstration" par "votre nom d'utilisteur ent",   
 "pronotevs" par "votre mot de passe" 
@@ -94,18 +94,18 @@ Si vous êtes sous linux et que vous ne savez pas vraiment vous servir du termin
 Si vous tenez quand même à ne pas installer visual studio code ouvrez un terminal ou un powershell si vous êtes sous windows et rendez vous dans le dossier note-raph-ok-google  
 pour linux :  
 ``` shell  
-cd /home/(nom d'utilisateur)/note-raph-ok-google-cas  
+cd $HOME/note-raph-ok-google-cas  
 ```
 pour windows  
 ``` shell  
-cd C:/Utilisateurs/(nom d'utilisateur)/note-raph-ok-google-cas 
+cd %HOMEPATH%\note-raph-ok-google-cas 
 ```
 Dans visual studio code ouvrez le terminal en bas à gauche.
 Dans les deux cas exécutez la commande : 
 ``` shell  
 npm init
 ```
-Puis appuyer sur entrer jusqu'à ce que vous puissiez exécuter une nouvelle commande puis exécuter la commande :  
+Puis appuyez sur entrer jusqu'à ce que vous puissiez exécuter une nouvelle commande puis exécutez la commande :  
 ``` shell  
 npm update
 ```
@@ -197,7 +197,7 @@ Changer les crochets du tout début du code et de la fin par des { en respectant
     {"name":"LCA LATIN","id":12}
 }
 ```
-Enfin devant chaque { rajoutez "les deux premières lettres de la matière selon le modèle suivant :  
+Enfin devant chaque "{" rajoutez les deux premières lettres de la matière selon le modèle suivant :  
 ``` json
     "an" : {"name": "ANGLAIS LV2", "id":0 },
     "te" : {"name": "TECHNOLOGIE", "id":0 },
@@ -216,7 +216,7 @@ Enfin devant chaque { rajoutez "les deux premières lettres de la matière selon
     "it" : {"name": "ITALIEN LV2", "id":0 },
     "gr" : {"name": "LCA GRECQUE", "id":0 }
 ```
-Note : Les matière non renseigné dans ce modèle ne sont pas supporté il faut donc supprimer la ligne de cette manière (ici on supprime VIE DE CLASSE) :
+Note : Les matières non-renseignées dans ce modèle ne sont pas supporté il faut donc supprimer la ligne correspondante de cette manière (ici on supprime VIE DE CLASSE) :
 ``` json
 {  
 "an" : {"name": "ANGLAIS LV2", "id":0 },   
@@ -250,7 +250,7 @@ Mon résultat après toutes les modifications ressemble à ceci (cela changera p
     "la":{"name":"LCA LATIN","id":12}
 }
 ```
-Rendez vous dans le fichier languages.json et remplacer les 0 par des 1 pour les langues que vous pratiquez. Vous obtiendrez un fichier similaire au mien :  
+Rendez-vous dans le fichier languages.json et remplacez les 0 par des 1 pour les langues que vous pratiquez. Vous obtiendrez un fichier similaire au mien :  
 ``` json
 {
     "an": 1, //Anglais
@@ -262,7 +262,7 @@ Rendez vous dans le fichier languages.json et remplacer les 0 par des 1 pour les
     "gr": 0  //Grec
 }
 ```
-Une fois que vous avez fais ça vous avez fais le plus difficile le reste vous paraitra étonnament simple.
+Une fois que vous avez fais ça vous avez fais le plus difficile le reste vous paraîtra étonnement simple.
 
 # Création de l'application google
 Rendez vous sur [le lien suivant](https://console.actions.google.com/)  
@@ -282,7 +282,7 @@ Puis :
 
 Sous Windows faites tout simplement :  
 ``` shell
-./gactions.exe init
+.\gactions.exe init
 ```
 Cela créera un fichier action.json.  
 Ouvrez ce fichier et remplacer le code présant dans le fichier par le suivant :  
