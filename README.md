@@ -248,6 +248,18 @@ Mon résultat après toutes les modifications ressemble à ceci (cela changera p
     "la":{"name":"LCA LATIN","id":12}
 }
 ```
+Rendez vous dans le fichier languages.json et remplacer les 0 par des 1 pour les langues que vous pratiquez. Vous obtiendrez un fichier similaire au mien :  
+``` json
+{
+    "an": 1, //Anglais
+    "al": 1, //Allemand
+    "es": 0, //Espagnol
+    "ru": 0, //Russe
+    "it": 0, //Italien
+    "la": 1, //Latin
+    "gr": 0  //Grec
+}
+```
 Une fois que vous avez fais ça vous avez fais le plus difficile le reste vous paraitra étonnament simple.
 
 # Création de l'application google
@@ -334,5 +346,18 @@ Sous Linux :
 ```
 Copiez le lien du terminal et ouvrez le dans chrome.  
 Connectez vous à votre compte. Il vous renverra une clé à copier-coller dans le terminal de Visual Studio Code.  
-Appuyez sur entrer. Le terminal affichera un lien restez enfoncé sur control et clicquez gauche sur ce lien vous arrivez dans un simulateur de google home.  
-Ne fermez ma l'onglet et rendez vous dans Visual Studio Code.
+Appuyez sur entrer. Le terminal affichera un lien restez enfoncé sur control et cliquez gauche sur ce lien vous arrivez dans un simulateur de google home.  
+Ne fermez pas l'onglet et rendez vous dans Visual Studio Code.  
+Executez la commande suivant :  
+``` shell
+node index.js
+```
+Rendez vous dans l'onglet chrome où l'application test tourne et cliquez sur "Parler avec Note Raph". Si il vous réponds que l'application ne réponds pas retournez dans le fichier action.json et vérifiez le lien ngrok. Une fois les modification éffectué rendez vous dans le terminal faites Ctrl+C et éxecutez la commande suivante pour mettre à jour l'adresse :  
+Sous Windows :  
+``` shell
+./gactions.exe update -action_package action.json -project l'iddevotreapplication
+```
+Sous Linux :  
+``` shell
+./gactions update -action_package action.json -project l'iddevotreapplication
+```
