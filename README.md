@@ -384,10 +384,10 @@ Puis relancez index.js :
 node index.js
 ```
 Retournez sur l'environement de test et rééssayez (si vous avez toujours un problème à vous connecter contactez moi sur mon mail (note.raph.help@outlook.com)).  
-Si tout se passe bien google vous saluera amicalement avec votre nom prénom.
+Si tout se passe bien google vous saluera amicalement avec votre nom prénom.  
 Pour tester rapidement dans la bar en haut qui sert à parler à google écrivez :  
-quelle est ma moyenne générale
-Si elle vous retourne votre moyenne général magnifique ok google marche !.
+quelle est ma moyenne générale  
+Si elle vous retourne votre moyenne général magnifique ok google marche !  
 Quittez le programme dans le terminal en faisant Ctrl+C.
 Sous windows :  
 -Rendez-vous dans votre dossier personnnel en faisant Win+R puis %HOMEPATH% puis entrer.  
@@ -406,4 +406,28 @@ Ouvrez un terminal. Faites :
 cd note-raph-ok-google-cas  
 sudo chmod +x start.sh
 sudo bash start.sh
+```
+
+A chaque arrêt de votre pc vous devez :  
+Sous Windows :  
+* Ouvrir un powershell et exécuter la commande :  
+``` shell
+.\note-raph-ok-google-cas\ngrok.exe http 3000
+```
+* Copier le lien commançant par https et le coller à la place de l'ancien dans le fichier action.json
+* Ouvrir une deuxième fenêtre de powershell et éxecuter les commandes suivantes :  
+``` shell
+.\note-raph-ok-google\gactions.exe update -action_package action.json -project (PROJECT ID de votre app okgoogle(sans les parenthèses))
+.\note-raph-ok-google\start.bat
+```
+Sous Linux :  
+* Ouvrir un terminal et exécuter la commande :  
+``` shell
+./note-raph-ok-google-cas/ngrok http 3000
+```
+* Copier le lien commançant par https et le coller à la place de l'ancien dans le fichier action.json
+* Ouvrir une deuxième fenêtre de powershell et éxecuter les commandes suivantes :  
+``` shell
+./note-raph-ok-google/gactions.exe update -action_package action.json -project (PROJECT ID de votre app okgoogle(sans les parenthèses))
+sudo bash ./note-raph-ok-google/start.sh
 ```
