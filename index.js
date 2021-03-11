@@ -29,7 +29,7 @@ var dev_ru = "Vous n'avez pas de devoirs en russe";
 var dev_it = "Vous n'avez pas de devoirs en italien"; 
 var dev_gr = "Vous n'avez pas de devoirs en grec"; 
 var dev_an = "Vous n'avez pas de devoirs en anglais"; 
-var dev_result = "en: ";
+var dev_result = "Vous avez des devoirs en: ";
 if (devoirs.te.dev != "0"){ dev_te = "Vous devez :\n"+devoirs.te.dev; dev_result = dev_result + "\n-" + devoirs.te.subject}
 if (devoirs.ma.dev != "0"){ dev_ma = "Vous devez :\n"+devoirs.ma.dev; dev_result = dev_result + "\n-" + devoirs.ma.subject}
 if (devoirs.mu.dev != "0"){ dev_mu = "Vous devez :\n"+devoirs.mu.dev; dev_result = dev_result + "\n-" + devoirs.mu.subject}
@@ -116,7 +116,9 @@ var codep_etablissement = infos.codep_etablissement;
 var title_last_info = infos.title_last_info;
 var content_last_info = infos.content_last_info;
         
-        
+if(dev_result == "Vous avez des devoirs en: "){
+    dev_result = "Vous n'avez pas de devoirs"
+}     
 // © rlaude06 ©
 
 const {actionssdk, Image} = require('actions-on-google');
@@ -273,7 +275,7 @@ function handleTextIntent(conv, input) {
         
     }else if (input.includes("devoirs")&&!input.includes("techno")&&!input.includes("math")&&!input.includes("musique")&&!input.includes("physique")&&!input.includes("arts")&&!input.includes("français")&&!input.includes("histoire")&&!input.includes("SVT")&&!input.includes("allemand")&&!input.includes("latin")&&!input.includes("espagnol")&&!input.includes("russe")&&!input.includes("italien")&&!input.includes("grec")&&!input.includes("anglais")) {
         
-        conv.ask('Vous avez des devoirs '+dev_result);
+        conv.ask(dev_result);
         
     }else if (input.includes("devoirs") && input.includes("techno")) {
         
