@@ -3,7 +3,7 @@ L'objectif de Note Raph ok-google est de connecter un compte pronote avec ok-goo
 -Note Raph ok-google  
 -Note Raph calendar (en cours de programation)  
 Note Raph ok-google permet de récupérer tout ce que l'application pronote propose à la portée de votre voix.  
-Par exemple, les devoirs, les moyennes, les notes l'emploi du temps etc...  
+Par exemple, les devoirs, les moyennes, les notes, l'emploi du temps etc...  
 Si vous êtes bloqué durant la configuration envoyez moi un mail à note.raph.help@outlook.com avec le détail de votre souci et un screen de votre terminal de commande Visual Studio Code.  
 Par ailleurs si vous n'avez jamais codé de votre vie suivez à la lettre chaque consigne pour éviter d'être bloqué.  
 
