@@ -1,5 +1,5 @@
+// © rlaude06 ©
 const pronote = require('pronote-api');
-const mysql = require('mysql');
 const fs = require('fs');
 
 let file1 = fs.readFileSync('json/pronote-account.json');
@@ -32,7 +32,8 @@ async function main()
         return result;
       }
     var from = new Date;
-    var to = addDays(from, 3);
+    from = addDays(from, 1)
+    var to = addDays(from, 4);
     var ok;
     var a;
 
@@ -293,6 +294,7 @@ let devoirs = {
 }
 devoirs = JSON.stringify(devoirs);
 fs.writeFileSync('json/devoirs.json', devoirs);
+   // © rlaude06 ©
 
 let moy = {
     "student":{
@@ -352,7 +354,7 @@ a=a+1;
 var month = timetable[0].to.getMonth()+1
 var smonth;
 if (month == 1) smonth = "janvier";if (month == 2) smonth = "février";if (month == 3) smonth = "mars";if (month == 4) smonth = "avril";if (month == 5) smonth = "mai";if (month == 6) smonth = "juin";if (month == 7) smonth = "juillet";if (month == 8) smonth = "août";if (month == 9) smonth = "septembre";if (month == 10) smonth = "octobre";if (month == 11) smonth = "novembre";if (month == 12) smonth = "décembre";
-var day = timetable[0].to.getDay();
+var day = timetable[0].to.getDay()+1;
 var sday;
 if (day == 1) sday = "lundi";if (day == 2) sday = "mardi";if (day == 3) sday = "mercredi";if (day == 4) sday = "jeudi";if (day == 5) sday = "vendredi";if (day == 6) sday = "samedi";if (day == 7) sday = "dimanche";
 
@@ -378,21 +380,19 @@ while (a<timetable.length) {
     if(lang.ru == 1){if(timetable[a].subject == mat.ru.name){subject = " de russe" }};
     if(lang.it == 1){if(timetable[a].subject == mat.it.name){subject = " d'italien" }};
     if(lang.gr == 1){if(timetable[a].subject == mat.gr.name){subject = " de grec" }};
-
     room = timetable[a].room      
     /*if(timetable[a].room.indexOf(' ') == -1){
         room = timetable[a].room   
     }else{
         room = timetable[a].room.slice(0, timetable[a].room.indexOf(' '))
     }*/
-
     edt.classes.push({
     "subject":subject,
     "from":timetable[a].from.getHours()+"h"+timetable[a].from.getMinutes(),
     "to":timetable[a].to.getHours()+"h"+(timetable[a].from.getMinutes()-5),
     "iscancelled":timetable[a].isCancelled,
     "room":room
-});
+    });
     a=a+1;
 }
 edt = JSON.stringify(edt);
@@ -407,3 +407,4 @@ main().catch(err => {
         console.error(err);
     }
 });
+// © rlaude06 ©

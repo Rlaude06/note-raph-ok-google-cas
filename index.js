@@ -115,10 +115,12 @@ var etablissement = infos.etablissement;
 var codep_etablissement = infos.codep_etablissement;
 var title_last_info = infos.title_last_info;
 var content_last_info = infos.content_last_info;
+if (dev_result == "Vous avez des devoirs en: ") {
+    dev_result = "Vous n'avez pas de devoirs à faire";
+} 
+var nb_h_manquee = infos.nb_h_manquee
+var nb_h_injustifiee = infos.nb_h_injustifiee
         
-if(dev_result == "Vous avez des devoirs en: "){
-    dev_result = "Vous n'avez pas de devoirs"
-}     
 // © rlaude06 ©
 
 const {actionssdk, Image} = require('actions-on-google');
@@ -276,7 +278,7 @@ function handleTextIntent(conv, input) {
     }else if (input.includes("devoirs")&&!input.includes("techno")&&!input.includes("math")&&!input.includes("musique")&&!input.includes("physique")&&!input.includes("arts")&&!input.includes("français")&&!input.includes("histoire")&&!input.includes("SVT")&&!input.includes("allemand")&&!input.includes("latin")&&!input.includes("espagnol")&&!input.includes("russe")&&!input.includes("italien")&&!input.includes("grec")&&!input.includes("anglais")) {
         
         conv.ask(dev_result);
-        
+//© rlaude06 ©
     }else if (input.includes("devoirs") && input.includes("techno")) {
         
         conv.ask(dev_te);
@@ -343,10 +345,9 @@ function handleTextIntent(conv, input) {
             return process.exit(1);
         }
         setTimeout(function2, 10000);        
-    }else if (input.includes("test")){
+    }else if (input.includes("emploi du temps") || input.includes("programme") || input.includes("cours")){
         conv.ask("Le "+date+", vous avez cours:"+edtresult);       
     }
-
 
 
     else if (input.includes("adresse") && (input.includes("collège")||input.includes("établissement")||input.includes("lycée"))) {

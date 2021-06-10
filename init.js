@@ -18,6 +18,8 @@ async function main()
       }
     var from = new Date;
     var to = addDays(from, 3);
+    console.log(to);
+  //  var to = new Date(2021, 3, 28);
     const session = await pronote.login(url, username, password, cas);
     const marks = await session.marks();
 
@@ -47,10 +49,9 @@ while (a<marks.subjects.length) {
     mat[a].id = a;
     a=a+1;
 }
-  console.log(mat);
-  let matiere = JSON.stringify(mat)
-  fs.writeFileSync('json/matière.json', matiere);
-
+    console.log(mat);
+    let matiere = JSON.stringify(mat)
+    fs.writeFileSync('json/matière.json', matiere);
     return;
 }
 
